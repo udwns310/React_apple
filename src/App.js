@@ -10,9 +10,10 @@ import { useState } from "react";
 import Card from "./card.js";
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
 import Detail from "./routes/detail.js";
+import axios from "axios";
 
 function App() {
-  let [shoes] = useState(data);
+  let [shoes, setShoes] = useState(data);
   let navigate = useNavigate();
 
   return (
@@ -77,9 +78,22 @@ function App() {
                   })}
                 </div>
               </div>
+              <button
+                onClick={() => {
+                  axios
+                    .get("https://codingapple1.github.io/shop/data2.json")
+                    .then((data) => {
+                      let copy = [...shoes, ...data.data];
+                      setShoes(copy);
+                    });
+                }}
+              >
+                버튼
+              </button>
             </div>
           }
         />
+
         <Route
           path="/detail/:id"
           element={
