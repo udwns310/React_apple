@@ -1,14 +1,20 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+function Detail(props){
+  useEffect(()=>{
+    console.log('안녕')
+  })
 
-
-function Detail(props) {
+  let [count, setCount] = useState(0)
   let { id } = useParams();
   let 찾은상품 = props.shoes.find((x) => {
     return x.id == id;
   });
   return (
     <div className="container">
+      {count}
+      <button onClick={()=>{setCount(count+1)}}>버튼</button>
       <div className="row">
         <div className="col-md-6">
           <img
