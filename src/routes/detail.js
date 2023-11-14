@@ -53,7 +53,7 @@ function Detail(props) {
             }}
             eventKey="link0"
           >
-            버튼0
+            상세정보
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
@@ -63,7 +63,7 @@ function Detail(props) {
             }}
             eventKey="link1"
           >
-            버튼1
+            리뷰
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
@@ -73,7 +73,7 @@ function Detail(props) {
             }}
             eventKey="link2"
           >
-            버튼2
+            고객센터
           </Nav.Link>
         </Nav.Item>
       </Nav>
