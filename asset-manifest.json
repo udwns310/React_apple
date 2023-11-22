@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React_apple/static/css/main.b4830987.css",
+    "main.js": "/React_apple/static/js/main.21512832.js",
+    "static/media/bg.png": "/React_apple/static/media/bg.616f307c169b743ff920.png",
+    "index.html": "/React_apple/index.html",
+    "main.b4830987.css.map": "/React_apple/static/css/main.b4830987.css.map",
+    "main.21512832.js.map": "/React_apple/static/js/main.21512832.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4830987.css",
+    "static/js/main.21512832.js"
+  ]
+}
