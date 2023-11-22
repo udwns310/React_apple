@@ -9,6 +9,15 @@ function Detail(props) {
     }, 2000);
   });
 
+  let [fade2, setFade2] = useState("");
+
+  useEffect(() => {
+    setFade2("end");
+    return () => {
+      setFade2("");
+    };
+  }, []);
+
   let [탭, 탭변경] = useState(0);
   let [alert, setAlert] = useState(true);
   let [count, setCount] = useState(0);
@@ -18,7 +27,7 @@ function Detail(props) {
   });
 
   return (
-    <div className="container">
+    <div className={"container start " + fade2}>
       {alert == true ? (
         <div className="alert alert-warning">2초이내 구매시 할인</div>
       ) : null}
